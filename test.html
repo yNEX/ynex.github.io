@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Internal CSS -->
+<style>
+* {
+    color: chartreuse;
+}
+
+main {
+    height: 90vh;
+    width: vw;
+}
+body {
+    background-color: black;
+}
+.main {
+    border: 1px dotted red;
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+.item1 {
+    border: 1px dotted blue;
+    width: 75%;
+    height: 50%;
+}
+</style>
+<!-- Main Part -->
+<body>
+    <script>
+    function goBack(){
+        window.history.back();
+    }    
+    </script>
+    <button onclick="goBack()">Zurück</button>
+<main>
+    <div class="main">
+        <div class="item1"></div>
+    </div>
+</main>
+</body>
+</html>

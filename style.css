@@ -1,0 +1,199 @@
+::root {
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+/* Global rules */
+* {
+  /* color: chartreuse; */
+}
+
+/* Reset Standard Werte */
+body {
+  margin: 0%;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Main Viewpoint */
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  /* max-height: 100%; */
+}
+
+/* For debugging purposes */
+div {
+  /* border: 0.5px dotted crimson; */
+}
+
+/* Set Font for all common Headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: chartreuse;
+}
+
+/* Display all <p> inside <li> like <a> */
+li > p,
+p,
+span {
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9vw;
+  color: chartreuse;
+}
+
+/* Remove all link indicators from <a> */
+a {
+  text-decoration: none;
+  color: chartreuse;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9vw;
+}
+/* Dispaly an -> after <a> */
+.mobkt a::after {
+  content: ' \2794';
+}
+
+.mobkt li:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+/*  */
+ul {
+  list-style-type: none;
+}
+
+/* Terminator Menü */
+.terminal {
+  width: 50%;
+  height: 50%;
+}
+.terminal li {
+  width: 35%;
+  padding: 0.8em 1em;
+  background-color: #363636;
+  border: 1px solid chartreuse;
+  text-align: center;
+  font-weight: bold;
+}
+
+.terminal li:hover {
+  background-color: #141414;
+}
+/* Mobiles Kartenterminal */
+.mobkt {
+  visibility: hidden;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid #3983ab;
+  padding-left: 5%;
+}
+
+.mobkt li {
+  width: 40%;
+}
+
+.viewer {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 30%;
+  height: 100%;
+}
+.mobkt:target {
+  visibility: visible;
+}
+/* Stationäres Kartenterminal */
+
+.kt {
+  visibility: hidden;
+}
+
+.kt:target {
+  visibility: visible;
+}
+
+.ausnahme {
+  font-size: 1.8vw;
+}
+
+button {
+  background-color: black;
+  color: chartreuse;
+  text-align: center;
+  border-color: chartreuse;
+  padding: 0.5% 2%;
+  margin: 10px;
+}
+
+/* Legende für die verschiedenen Symbole */
+image {
+  float: left;
+  padding-right: 1%;
+}
+
+.tooltip {
+  display: none;
+  background-color: grey;
+  width: 35%;
+}
+
+.hoverme:hover .tooltip {
+  display: inline-block;
+  visibility: visible;
+  background-color: grey;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  border-radius: 8px;
+  opacity: 80%;
+}
+
+.sample {
+  width: 30%;
+  height: auto;
+  float: right;
+  position: absolute;
+  top: 1em;
+  left: 0%;
+}
+
+.sample-wrapper {
+  border-left: 3px solid white;
+  position: relative;
+  /* padding-left: 1em; */
+}
+.legende {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  /* padding-left: 2em;
+    padding-bottom: 1em; */
+  border: 1px solid white;
+}
+
+.icon-wrapper {
+  padding: 1em 0em 1em 1em;
+  opacity: 100%;
+  text-align: left;
+}
+
+span {
+  color: white;
+  padding-right: 2%;
+  font-size: 13px;
+  opacity: 100%;
+}
+
+.button-effect {
+  background-color: #3983ab;
+}

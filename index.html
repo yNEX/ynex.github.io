@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Terminator</title>
+  </head>
+
+  <body>
+    <!-- Zurück gehen Funktion -->
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+    <main>
+      <!-- Terminalauswahl-->
+      <!--    Orga930M/Cherry ST-1530
+                Orga6141/
+                Cherry -->
+      <div class="terminal">
+        <h1 style="text-decoration: underline">
+          <a class="ausnahme" href="index.html"> Terminalauswahl</a>
+        </h1>
+        <ul>
+          <li>
+            <div class="hoverme" class="button-effect">
+              <a href="#mobileskt">Orga-930M / Cherry ST-1530</a>
+              <div class="tooltip">
+                <!-- Kartensymbole -->
+                <div class="icon-wrapper">
+                  <img class="legende" src="sim_empty.png" /><span>
+                    -Karte nicht eingesteckt</span
+                  >
+                  <br />
+                  <img class="legende" src="sim_inserted.png" /><span>
+                    -Karte eingesteckt</span
+                  >
+                  <br />
+                  <img class="legende" src="sim_active.png" /><span>
+                    -Karte aktiviert, bereit</span
+                  >
+                  <br />
+                  <img class="legende" src="sim_datatransfer.png" /><span>
+                    -Datentransfer findet statt</span
+                  >
+                  <br />
+                  <img class="legende" src="sim_error.png" /><span>
+                    -Fehler mit der Karte</span
+                  >
+                  <br />
+                  <!-- Schnittstellen -->
+                  <img class="legende" src="seriell.png" /><span>
+                    -Schnittstelle > Seriell
+                  </span>
+                  <br />
+                  <img class="legende" src="seriell_ready.png" /><span>
+                    -Seriell verbunden, bereit</span
+                  >
+                  <br />
+                  <img class="legende" src="seriell_datatransfer.png" /><span>
+                    -Seriell Datentransfer</span
+                  >
+                  <br />
+                  <img class="legende" src="usb.png" /><span>
+                    -Schnittstelle > USB</span
+                  >
+                  <br />
+                  <img class="legende" src="usb_ready.png" /><span>
+                    -USB verbunden, bereit</span
+                  >
+                  <br />
+                  <img class="legende" src="usb_datatransfer.png" /><span>
+                    -USB Datentransfer</span
+                  >
+                  <br />
+                  <!-- Adminsymbole -->
+                  <img class="legende" src="locked.png" /><span>
+                    -Kartenterminal Einstellungen gesperrt</span
+                  >
+                  <br />
+                  <img class="legende" src="unlocked.png" /><span>
+                    -Kartenterminal Einstellungen entsperrt</span
+                  >
+                  <br />
+                  <!-- Sample Bild Test -->
+                  <div class="sample-wrapper">
+                    <img class="sample" src="Cherry_ST-1530.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#kartenterminal">Kartenterminal</a>
+          </li>
+          <li>
+            <a href="#soon">Comming soon</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ~~~~~~ Mobiles Kartenterminal ~~~~~~ -->
+      <div class="viewer">
+        <div id="mobileskt" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            Hauptmenü<button onclick="location.href='index.html';">
+              Startseite
+            </button>
+          </h3>
+          <ul>
+            <li>
+              <a href="#datenverwaltung">Datenverwaltung</a>
+            </li>
+            <li>
+              <a href="#settings">Einstellungen</a>
+            </li>
+            <li>
+              <a href="#service">Service</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Datenverwaltung -->
+        <div id="datenverwaltung" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>.\Datenverwaltung<button onclick="goBack()">Zurück</button></h3>
+          <ul>
+            <li>
+              <p>Anzeigen</p>
+            </li>
+            <li>
+              <p>Suchen</p>
+            </li>
+            <li>
+              <p>Löschen</p>
+            </li>
+            <li>
+              <a href="#sortieren">Sortieren</a>
+            </li>
+            <li>
+              <p>Info</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Datenverwaltung > Sortieren -->
+        <div id="sortieren" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            .\Datenverwaltung\Sortieren<button onclick="goBack()">
+              Zurück
+            </button>
+          </h3>
+          <ul>
+            <li>
+              <p>Chronologisch</p>
+            </li>
+            <li>
+              <p>Familienname</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Datenverwaltung > Sortieren -->
+        <div id="sortieren" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            .\Datenverwaltung\Sortieren<button onclick="goBack()">
+              Zurück
+            </button>
+          </h3>
+          <ul>
+            <li>
+              <p>Chronologisch</p>
+            </li>
+            <li>
+              <p>Familienname</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Settings -->
+        <div id="settings" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>.\Einstellungen<button onclick="goBack()">Zurück</button></h3>
+          <ul>
+            <li>
+              <a href="#betriebsart">Betriebsart</a>
+            </li>
+            <li>
+              <a href="#schnittstelle">Schnittstelle</a>
+            </li>
+            <li>
+              <a href="#protokoll">PC-Protokoll</a>
+            </li>
+            <li>
+              <p>Zeit</p>
+            </li>
+            <li>
+              <p>Datum</p>
+            </li>
+            <li>
+              <a href="#sprache">Sprache</a>
+            </li>
+            <li>
+              <p>Freier Text</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Einstellungen > Betriebsart -->
+        <div id="betriebsart" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            .\Einstellungen\Betriebsart<button onclick="goBack()">
+              Zurück
+            </button>
+          </h3>
+          <ul>
+            <li>
+              <p>Mobile</p>
+            </li>
+            <li>
+              <p>Stationär</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Einstellungen > Schnittstelle -->
+        <div id="schnittstelle" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            .\Einstellungen\Schnittstelle<button onclick="goBack()">
+              Zurück
+            </button>
+          </h3>
+          <ul>
+            <li>
+              <a href="#auswahl">Auswahl</a>
+            </li>
+            <li>
+              <a href="#parameter">Parameter</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Einstellungen > Schnittstelle > Auswahl -->
+        <div id="auswahl" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            .\Einstellungen\Schnittstelle\Auswahl<button onclick="goBack()">
+              Zurück
+            </button>
+          </h3>
+          <ul>
+            <li>
+              <p>USB</p>
+            </li>
+            <li>
+              <p>Seriell</p>
+            </li>
+            <li>
+              <p>Drucker</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Einstellungen > Schnittstelle > Parameter -->
+        <div id="parameter" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            .\Einstellungen\Schnittstelle\Parameter<button onclick="goBack()">
+              Zurück
+            </button>
+          </h3>
+          <ul>
+            <li>
+              <p>USB</p>
+            </li>
+            <li>
+              <p>Seriell</p>
+            </li>
+            <li>
+              <p>Drucker</p>
+            </li>
+            <li>
+              <p>Computer</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Einstellungen > PC-Protokoll -->
+        <div id="protokoll" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            .\Einstellungen\PC-Protokoll<button onclick="goBack()">
+              Zurück
+            </button>
+          </h3>
+          <ul>
+            <li>
+              <p>T=1</p>
+            </li>
+            <li>
+              <p>CCID-Escape</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Einstellungen > Sprache -->
+        <div id="sprache" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            .\Einstellungen\Sprache<button onclick="goBack()">Zurück</button>
+          </h3>
+          <ul>
+            <li>
+              <p>Deutsch</p>
+            </li>
+            <li>
+              <p>Englisch</p>
+            </li>
+            <li>
+              <p>Platt</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service -->
+        <div id="service" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>.\Service<button onclick="goBack()">Zurück</button></h3>
+          <ul>
+            <li>
+              <p>Aufschließen</p>
+            </li>
+            <li>
+              <a href="#pinverwaltung">PIN Verwaltung</a>
+            </li>
+            <li>
+              <p>Status</p>
+            </li>
+            <li>
+              <p>Quittungstöne</p>
+            </li>
+            <li>
+              <a href="#test">Test</a>
+            </li>
+            <li>
+              <p>Update Terminal</p>
+            </li>
+            <li>
+              <p>Werkseinstellungen</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service > Pin-Verwaltung -->
+        <div id="pinverwaltung" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>
+            .\Service\PIN-Verwaltung<button onclick="goBack()">Zurück</button>
+          </h3>
+          <ul>
+            <li>
+              <p>Getrennte PINs</p>
+            </li>
+            <li>
+              <p>User PIN set</p>
+            </li>
+            <li>
+              <p>Admin PIN set</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service > Test -->
+        <div id="test" class="mobkt">
+          <h1>Mobiles Kartenterminal</h1>
+          <h3>.\Serice\Test<button onclick="goBack()">Zurück</button></h3>
+          <ul>
+            <li>
+              <p>Gesamttest</p>
+            </li>
+            <li>
+              <p>Einzeltest</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ~~~~~~ Stationäres Kartenterminal ~~~~~~ -->
+        <div id="kartenterminal" class="kt">
+          <h1 style="text-decoration: underline">Stationäres Kartenterminal</h1>
+          <ul>
+            <li>
+              <p>Noch in Arbeit</p>
+            </li>
+            <li>
+              <p>Random Text</p>
+            </li>
+            <li>
+              <p>Joa leck mi do am zückerli</p>
+            </li>
+            <li>
+              <p>Aldoa weischte was? I hab ka bock mehr!!</p>
+            </li>
+          </ul>
+        </div>
+        <!-- Allgemeine Informationen -->
+      </div>
+    </main>
+  </body>
+</html>
