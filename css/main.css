@@ -14,6 +14,12 @@ body {
   background-color: black;
 }
 
+h1>span{
+  margin: 0.9em;
+  font-size: 1em;
+  text-decoration: unset;
+}
+
 /* Main Viewpoint */
 main {
   position: relative;
@@ -124,6 +130,7 @@ ul {
 
 .ausnahme {
   font-size: 1.8vw;
+  margin-left: 0.9em;
 }
 
 button {
